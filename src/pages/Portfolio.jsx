@@ -18,10 +18,10 @@ const staticProjects = [
     showButtons: true,
   },
   {
-    id: 'blueledger',
-    imageUrl: '/blueledger.png',
-    liveDemo: 'https://blue-ledger.netlify.app/',
-    githubRepo: 'https://github.com/username/blue-leadger',
+    id: 'warenova',
+    imageUrl: '/warenova.png',
+    liveDemo: 'https://warenova.netlify.app/',
+    githubRepo: 'https://github.com/username/warenova',
     featured: true,
     year: '2026',
     status: 'live',
@@ -51,7 +51,7 @@ const staticProjects = [
   },
 ];
 
-// ✅ Text mapped by project id (no index mismatch issues)
+// ✅ Text mapped by project id
 const translations = {
   en: {
     title: 'My Digital Portfolio',
@@ -62,7 +62,7 @@ const translations = {
     projectsCount: 'total projects',
     liveCount: 'live projects',
     description:
-      'Explore my portfolio. Ibicupuri and BlueLedger are live and available for demo. More projects are in active development and will launch soon.',
+      'Explore my portfolio. Ibicupuri and Warenova are live and available for demo. More projects are in active development and will launch soon.',
     viewDemo: 'Live Demo',
     viewCode: 'Source Code',
     ctaTitle: 'Interested in Collaborating?',
@@ -78,8 +78,8 @@ const translations = {
           'Delivering a smooth experience for students with different devices and internet conditions.',
         highlight: 'Live and actively used by students.',
       },
-      blueledger: {
-        title: 'BlueLedger — Stock Management System',
+      warenova: {
+        title: 'Warenova — Stock Management System',
         description:
           'A live inventory system with Admin and Worker dashboards. Admin manages products and workers; workers update stock and mark items sold. Built for real business workflows.',
         challenge:
@@ -114,7 +114,7 @@ const translations = {
     projectsCount: 'projets totaux',
     liveCount: 'projets live',
     description:
-      'Découvrez mon portfolio. Ibicupuri et BlueLedger sont disponibles en live. D’autres projets sont en développement et seront lancés prochainement.',
+      'Découvrez mon portfolio. Ibicupuri et Warenova sont disponibles en live. D’autres projets sont en développement et seront lancés prochainement.',
     viewDemo: 'Démo Live',
     viewCode: 'Code Source',
     ctaTitle: 'Intéressé(e) par une collaboration ?',
@@ -130,8 +130,8 @@ const translations = {
           "Assurer performance et accessibilité selon les appareils et la connexion.",
         highlight: 'Live et utilisée par des étudiants.',
       },
-      blueledger: {
-        title: 'BlueLedger — Gestion de Stock',
+      warenova: {
+        title: 'Warenova — Gestion de Stock',
         description:
           "Système d’inventaire live avec tableaux Admin et Employé. L’admin gère produits et employés; l’employé met à jour le stock et marque vendu.",
         challenge:
@@ -166,7 +166,7 @@ const translations = {
     projectsCount: 'ibikorwa byose',
     liveCount: 'ibikorwa biriho',
     description:
-      'Reba porifoliyo yanjye. Ibicupuri na BlueLedger biri live kandi wabireba. Indi mishinga iri gukorwa kandi izatangira vuba.',
+      'Reba porifoliyo yanjye. Ibicupuri na Warenova biri live kandi wabireba. Indi mishinga iri gukorwa kandi izatangira vuba.',
     viewDemo: 'Live Demo',
     viewCode: "Kode y'Umwimerere",
     ctaTitle: 'Wifuza gukorana?',
@@ -182,8 +182,8 @@ const translations = {
           "Gukora neza ku bikoresho bitandukanye no ku internet itandukanye.",
         highlight: 'Live kandi rukoreshwa n’abanyeshuri.',
       },
-      blueledger: {
-        title: 'BlueLedger — Sisitemu yo Gucunga Stock',
+      warenova: {
+        title: 'Warenova — Sisitemu yo Gucunga Stock',
         description:
           "Sisitemu iri live ifite Admin na Worker dashboards. Admin acunga products/workers; worker avugurura stock kandi akamarka sold.",
         challenge:
@@ -300,7 +300,6 @@ const Portfolio = ({ language }) => {
                 className="group relative"
               >
                 <div className={`relative rounded-2xl overflow-hidden ${isLive ? 'ring-2 ring-blue-500/20' : 'opacity-85'}`}>
-                  {/* Overlay for coming soon */}
                   {!isLive && (
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-900/60 to-gray-800/60 z-10 flex items-center justify-center">
                       <span className="text-white text-xl font-bold bg-black/40 px-4 py-2 rounded-full backdrop-blur-sm">
@@ -309,7 +308,6 @@ const Portfolio = ({ language }) => {
                     </div>
                   )}
 
-                  {/* Status badge */}
                   <div className="absolute top-4 right-4 z-20">
                     {isLive ? (
                       <span className="px-3 py-1 bg-green-500 text-white text-xs font-bold rounded-full flex items-center gap-1">
@@ -327,7 +325,6 @@ const Portfolio = ({ language }) => {
                     title={projectData?.title || 'Project'}
                     description={projectData?.description || ''}
                     highlight={projectData?.highlight || ''}
-                    // ✅ tags removed
                     tags={[]}
                     imageUrl={project.imageUrl}
                     liveDemo={project.liveDemo}

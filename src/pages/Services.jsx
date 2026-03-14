@@ -26,6 +26,7 @@ const fadeIn = {
   hidden: { opacity: 0 },
   show: { opacity: 1, transition: { duration: 0.8 } }
 };
+
 const Services = ({ language }) => {
   const translations = {
     en: {
@@ -38,7 +39,8 @@ const Services = ({ language }) => {
       packages: [
         {
           name: "Basic",
-          price: "$90",
+          oldPrice: "$90",
+          price: "$50",
           features: [
             "1 Page Website",
             "Responsive Design",
@@ -77,7 +79,7 @@ const Services = ({ language }) => {
         }
       ],
       consultation: {
-        price: "$15",
+        price: "$10",
         description: "consultation session to discuss your project requirements, technical solutions, and development strategy.",
         features: [
           "Project analysis",
@@ -94,9 +96,9 @@ const Services = ({ language }) => {
           rating: 5
         },
         {
-          name: "Ruterana jeanluc",
-          position: "CEO, UMURABYO TV",
-          content: "The dashboard he created transformed how we track our social media performance. Highly recommended!",
+          name: "Kwizera Prince",
+          position: "Supplier",
+          content: "MUGISHA Victor developed an excellent e-commerce mobile app for us. He delivered it in a short time, and the final result was modern, smooth, and very impressive.",
           rating: 5
         },
         {
@@ -135,7 +137,8 @@ const Services = ({ language }) => {
       packages: [
         {
           name: "Basique",
-          price: "$90",
+          oldPrice: "$90",
+          price: "$50",
           features: [
             "Site Web d'une page",
             "Design Responsive",
@@ -174,7 +177,7 @@ const Services = ({ language }) => {
         }
       ],
       consultation: {
-        price: "$15",
+        price: "$10",
         description: "consultation d'une heure pour discuter des exigences de votre projet, des solutions techniques et de la stratégie de développement.",
         features: [
           "Analyse de projet",
@@ -191,9 +194,9 @@ const Services = ({ language }) => {
           rating: 5
         },
         {
-          name: "Ruterana jeanluc",
-          position: "PDG, UMURABYO TV",
-          content: "Le tableau de bord qu'il a créé a transformé notre façon de suivre nos performances sur les médias sociaux. Hautement recommandé !",
+          name: "Kwizera Prince",
+          position: "Fournisseur",
+          content: "MUGISHA Victor nous a développé une excellente application mobile d’e-commerce. Il l’a livrée en peu de temps, et le résultat final était moderne, fluide et très impressionnant.",
           rating: 5
         },
         {
@@ -232,13 +235,14 @@ const Services = ({ language }) => {
       packages: [
         {
           name: "Iby'ibanze",
-          price: "$90",
+          oldPrice: "$90",
+          price: "$50",
           features: [
             "Urupapuro rumwe rwa website",
-    "Imigaragarire ihuza na telefone na desktop (Responsive Design)",
-    "Fomu yo kuvugana (Contact Form)",
-    "SEO y'ibanze (Basic SEO)",
-    "Guhindura rimwe (1 Revision)"
+            "Imigaragarire ihuza na telefone na desktop (Responsive Design)",
+            "Fomu yo kuvugana (Contact Form)",
+            "SEO y'ibanze (Basic SEO)",
+            "Guhindura rimwe (1 Revision)"
           ],
           popular: false
         },
@@ -246,12 +250,12 @@ const Services = ({ language }) => {
           name: "Ibisanzwe",
           price: "$200",
           features: [
-             "Uruhande rw'imbere kugeza ku mapaji 5 (Up to 5 Pages)",
-    "Imigaragarire ihuza na telefone na desktop (Responsive Design)",
-    "Fomu yo kuvugana (Contact Form)",
-    "SEO igezweho (Advanced SEO)",
-    "Gucunga ibikubiye mu rubuga (Content Management)",
-    "Guhindura inshuro 3 (3 Revisions)"
+            "Uruhande rw'imbere kugeza ku mapaji 5 (Up to 5 Pages)",
+            "Imigaragarire ihuza na telefone na desktop (Responsive Design)",
+            "Fomu yo kuvugana (Contact Form)",
+            "SEO igezweho (Advanced SEO)",
+            "Gucunga ibikubiye mu rubuga (Content Management)",
+            "Guhindura inshuro 3 (3 Revisions)"
           ],
           popular: true
         },
@@ -260,24 +264,24 @@ const Services = ({ language }) => {
           price: "$500",
           features: [
             "Amapaji adafite umupaka (Unlimited Pages)",
-    "Imigaragarire ihuza na telefone na desktop (Responsive Design)",
-    "Imikorere ya E-commerce (E-commerce Functionality)",
-    "SEO igezweho (Advanced SEO)",
-    "Gucunga ibikubiye mu rubuga (Content Management)",
-    "Ibiranga byihariye (Custom Features)",
-    "Guhindura inshuro zose (Unlimited Revisions)"
+            "Imigaragarire ihuza na telefone na desktop (Responsive Design)",
+            "Imikorere ya E-commerce (E-commerce Functionality)",
+            "SEO igezweho (Advanced SEO)",
+            "Gucunga ibikubiye mu rubuga (Content Management)",
+            "Ibiranga byihariye (Custom Features)",
+            "Guhindura inshuro zose (Unlimited Revisions)"
           ],
           popular: false
         }
       ],
       consultation: {
-        price: "15$",
+        price: "$10",
         description: "Inama ku bisabwa n'umushinga wawe, ibisubizo by'ikoranabuhanga, hamwe na gahunda y'iterambere.",
         features: [
-           "Isesengura ry'umushinga (Project analysis)",
-    "Ubuyobozi bw'ikoranabuhanga (Technical guidance)",
-    "Gahunda y'iterambere (Development roadmap)",
-    "Ikiganiro cyo kubaza no gusubiza (Q&A session)"
+          "Isesengura ry'umushinga (Project analysis)",
+          "Ubuyobozi bw'ikoranabuhanga (Technical guidance)",
+          "Gahunda y'iterambere (Development roadmap)",
+          "Ikiganiro cyo kubaza no gusubiza (Q&A session)"
         ]
       },
       testimonials: [
@@ -288,9 +292,9 @@ const Services = ({ language }) => {
           rating: 5
         },
         {
-          name: "Ruterana jeanluc",
-          position: "Umuyobozi Mukuru, UMURABYO TV",
-          content: "Dashboard yakoze yahinduye uburyo dukurikirana imikorere y’imbuga zacu nkoranyambaga. Turamugira inama cyane!",
+          name: "Kwizera Prince",
+          position: "Supplier",
+          content: "MUGISHA Victor yadukoreye mobile app nziza cyane ya e-commerce. Yayitugejejeho mu gihe gito, kandi yari ifite imikorere myiza, igaragara neza kandi ishimishije cyane.",
           rating: 5
         },
         {
@@ -321,45 +325,47 @@ const Services = ({ language }) => {
     }
   };
 
-   const t = translations[language] || translations.en;
+  const t = translations[language] || translations.en;
 
   return (
-    <motion.div 
+    <motion.div
       initial="hidden"
       animate="show"
       variants={containerVariants}
       className="container mx-auto px-4 py-12"
     >
-      <motion.h1 
+      <motion.h1
         variants={fadeIn}
         className="text-3xl md:text-4xl font-bold mb-12 text-center"
       >
         {t.title}
       </motion.h1>
-      
+
       {/* Development Packages */}
-      <motion.section 
+      <motion.section
         variants={itemVariants}
         className="mb-16"
       >
-        <motion.h2 
+        <motion.h2
           variants={fadeIn}
           className="text-2xl font-bold mb-8 text-center"
         >
           {t.packagesTitle}
         </motion.h2>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {t.packages.map((pkg, index) => (
             <motion.div
               key={index}
               variants={itemVariants}
-              whileHover={{ 
+              whileHover={{
                 y: -10,
-                transition: { duration: 0.3, ease: "easeOut" } 
+                transition: { duration: 0.3, ease: "easeOut" }
               }}
             >
-              <ServiceCard 
+              <ServiceCard
                 name={pkg.name}
+                oldPrice={pkg.oldPrice}
                 price={pkg.price}
                 features={pkg.features}
                 popular={pkg.popular}
@@ -369,60 +375,78 @@ const Services = ({ language }) => {
           ))}
         </div>
       </motion.section>
-      
+
       {/* Consultation Services */}
-      <motion.section 
+      <motion.section
         variants={itemVariants}
         className="mb-16"
       >
-        <motion.h2 
+        <motion.h2
           variants={fadeIn}
           className="text-2xl font-bold mb-8 text-center"
         >
           {t.consultationTitle}
         </motion.h2>
-        <motion.div 
+
+        <motion.div
           initial={{ scale: 0.95 }}
           animate={{ scale: 1 }}
-          transition={{ 
-            type: "spring", 
+          transition={{
+            type: "spring",
             stiffness: 100,
             damping: 15
           }}
-          className="bg-indigo-50 dark:bg-indigo-900/20 rounded-xl p-8 max-w-3xl mx-auto"
+          className="bg-indigo-50 dark:bg-indigo-900/20 rounded-2xl p-8 max-w-3xl mx-auto shadow-md border border-indigo-100 dark:border-indigo-800/40"
         >
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
             <motion.div
               initial={{ rotate: -5 }}
               animate={{ rotate: 0 }}
-              whileHover={{ 
-                rotate: 5,
-                transition: { duration: 0.3 } 
+              whileHover={{
+                rotate: 3,
+                scale: 1.03,
+                transition: { duration: 0.3 }
               }}
-              className="bg-indigo-100 dark:bg-indigo-800 rounded-lg p-6 text-center min-w-[180px]"
+              className="bg-white dark:bg-indigo-900/40 rounded-2xl p-6 text-center min-w-[180px] shadow-sm border border-indigo-100 dark:border-indigo-700/40"
             >
-              <div className="text-4xl font-bold text-indigo-700 dark:text-indigo-300">{t.consultation.price}</div>
-              <div className="text-indigo-600 dark:text-indigo-200 mt-2">
+              <div className="text-4xl font-extrabold text-indigo-700 dark:text-indigo-300">
+                {t.consultation.price}
+              </div>
+              <div className="text-indigo-600 dark:text-indigo-200 mt-2 font-medium">
                 {language === 'en' ? 'per hour' : language === 'fr' ? 'par heure' : 'kwi saha'}
               </div>
             </motion.div>
+
             <div>
-              <p className="mb-4">{t.consultation.description}</p>
-              <ul className="space-y-2 mb-6">
+              <p className="mb-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+                {t.consultation.description}
+              </p>
+              <ul className="space-y-3 mb-6">
                 {t.consultation.features.map((feature, index) => (
-                  <motion.li 
-                    key={index} 
+                  <motion.li
+                    key={index}
                     className="flex items-center"
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 }}
                   >
-                    <span className="w-5 h-5 bg-indigo-600 rounded-full flex items-center justify-center mr-2">
-                      <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                    <span className="w-5 h-5 bg-indigo-600 rounded-full flex items-center justify-center mr-3 shadow-sm">
+                      <svg
+                        className="w-3 h-3 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M5 13l4 4L19 7"
+                        ></path>
                       </svg>
                     </span>
-                    {feature}
+                    <span className="text-gray-700 dark:text-gray-300">{feature}</span>
                   </motion.li>
                 ))}
               </ul>
@@ -430,29 +454,30 @@ const Services = ({ language }) => {
           </div>
         </motion.div>
       </motion.section>
-      
+
       {/* Testimonials */}
-      <motion.section 
+      <motion.section
         variants={itemVariants}
         className="mb-16"
       >
-        <motion.h2 
+        <motion.h2
           variants={fadeIn}
           className="text-2xl font-bold mb-8 text-center"
         >
           {t.testimonialsTitle}
         </motion.h2>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {t.testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
               variants={itemVariants}
-              whileHover={{ 
+              whileHover={{
                 scale: 1.03,
-                transition: { duration: 0.3 } 
+                transition: { duration: 0.3 }
               }}
             >
-              <TestimonialCard 
+              <TestimonialCard
                 name={testimonial.name}
                 position={testimonial.position}
                 content={testimonial.content}
@@ -462,18 +487,19 @@ const Services = ({ language }) => {
           ))}
         </div>
       </motion.section>
-      
+
       {/* FAQ */}
-      <motion.section 
+      <motion.section
         variants={itemVariants}
         className="mb-16"
       >
-        <motion.h2 
+        <motion.h2
           variants={fadeIn}
           className="text-2xl font-bold mb-8 text-center"
         >
           {t.faqTitle}
         </motion.h2>
+
         <div className="max-w-3xl mx-auto">
           {t.faqs.map((faq, index) => (
             <motion.div
@@ -484,7 +510,7 @@ const Services = ({ language }) => {
               viewport={{ once: true, amount: 0.1 }}
               transition={{ delay: index * 0.1 }}
             >
-              <FAQItem 
+              <FAQItem
                 question={faq.question}
                 answer={faq.answer}
               />
@@ -492,21 +518,20 @@ const Services = ({ language }) => {
           ))}
         </div>
       </motion.section>
-      
+
       {/* Newsletter */}
-      <motion.section
-        variants={itemVariants}
-      >
-        <motion.h2 
+      <motion.section variants={itemVariants}>
+        <motion.h2
           variants={fadeIn}
           className="text-2xl font-bold mb-8 text-center"
         >
           {t.newsletterTitle}
         </motion.h2>
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ 
+          transition={{
             type: "spring",
             stiffness: 60
           }}
